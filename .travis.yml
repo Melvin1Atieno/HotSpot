@@ -5,17 +5,23 @@ rvm:
 
 install:
   - gem install jekyll bundler
+  - gem install html-proofer
 
 before_script:
   - bundle install
 
 script:
   - bundle exec jekyll build
+  - bundle exec htmlproofer ./_site --disable-external
 
 branches:
   only:
     - release
     - gh-pages
+
+env:
+  global:
+    - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 
 cache: bundler
 
