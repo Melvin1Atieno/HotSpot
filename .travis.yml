@@ -1,0 +1,21 @@
+language: ruby
+
+rvm: 
+  - 2.5.1
+
+install:
+  - gem install jekyll bundler
+
+before_script:
+  - bundle install
+
+script:
+  - bundle exec jekyll build
+
+branches:
+  only:
+    - release
+    - gh-pages
+
+cache: bundler
+
