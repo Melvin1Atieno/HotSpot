@@ -1,0 +1,10 @@
+version: "3"
+services:
+  web-site:
+    image: jekyll/builder:latest
+    command: jekyll serve --livereload
+    volumes:
+      - ./:/srv/jekyll
+    ports:
+      - 4000:4000
+      - 35729:35729
