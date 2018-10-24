@@ -29,9 +29,9 @@ matrix:
         -
       after_success:
         - firebase deploy --token $FIREBASE_TOKEN
-    branches:
-      only:
-        - release
+      branches:
+        only:
+          - release
     
         
           
