@@ -28,6 +28,7 @@ matrix:
       scripts:
         -
   after_success:
+    script:
         - firebase deploy --token $FIREBASE_TOKEN
     branches:
       only:
