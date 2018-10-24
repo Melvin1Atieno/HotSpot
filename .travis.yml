@@ -21,18 +21,14 @@ matrix:
       branches:
         only:
           - release
-          - master
       env:
         global:
           - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
   
         cache: bundler
       after_success:
-        script:
-          - firebase deploy --token $FIREBASE_TOKEN
-        branches:
-          only:
-            -release
+        - firebase deploy --token $FIREBASE_TOKEN
+        
         
           
   
