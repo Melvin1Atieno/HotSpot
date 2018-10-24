@@ -27,11 +27,7 @@ matrix:
   
         cache: bundler
       after_success:
-        deploy:
-          provider: firebase
-        token:
-          env:
-           -$FIREBASE_TOKEN
+        - firebase deploy --token $FIREBASE_TOKEN
         
           
   
