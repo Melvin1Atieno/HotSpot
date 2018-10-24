@@ -25,9 +25,10 @@ matrix:
         - "8.10"
       install:
         - npm install -g firebase-tools
-      scripts:
+      script:
         -
   after_success:
+    script:
         - firebase deploy --token $FIREBASE_TOKEN
     branches:
       only:
