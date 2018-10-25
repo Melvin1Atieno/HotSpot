@@ -21,7 +21,11 @@ env:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
   cache: bundler
 after_success:
-  - firebase deploy --token $FIREBASE_TOKEN
+  branches:
+    only:
+      -release
+  script:
+    - firebase deploy --token $FIREBASE_TOKEN
     
     
         
