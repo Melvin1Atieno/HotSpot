@@ -16,7 +16,6 @@ script:
 branches:
   only:
     - release
-    - master
 env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
