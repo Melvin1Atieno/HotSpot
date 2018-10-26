@@ -22,14 +22,12 @@ env:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
   cache: bundler
 deploy:
-  skip_cleanup: true
   provider: firebase
+  skip_cleanup: true
   token: 
     env: $FIREBASE_TOKEN
   on:
     branch: release
-
-  # - firebase deploy --token 
     
     
         
