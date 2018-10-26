@@ -22,6 +22,7 @@ env:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
   cache: bundler
 deploy:
+  skip_cleanup: true
   provider: firebase
   token: 
     env: $FIREBASE_TOKEN
