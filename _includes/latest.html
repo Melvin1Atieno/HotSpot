@@ -1,0 +1,39 @@
+<div class="section primary-section" id="about">
+    <div class="triangle"></div>
+    <div class="container">
+        <div class="title">
+            <h1>LATEST BLOGS</h1>
+        </div>
+        <div class="row-fluid team">
+            <div class="span4" id="first-person">
+                {% for post in site.posts%}
+                <div class="thumbnail">
+                    <img src="{{post.blog-image}}" alt="team 1">
+                    <h3>{{post.title}}</h3>
+                    <ul class="social">
+                        <li>
+                            <a href="">
+                                <span class="icon-facebook-circled"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="icon-twitter-circled"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <span class="icon-linkedin-circled"></span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="mask">
+                        <h2>{{post.title}}</h2>
+                        <p>{{post.intro}}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
