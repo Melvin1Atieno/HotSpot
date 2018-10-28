@@ -1,0 +1,62 @@
+<div class="section secondary-section " id="blogs">
+    <div class="triangle"></div>
+    <div class="container">
+        <div class=" title">
+            <h1>PLACES</h1>
+        </div>
+        <ul class="nav nav-pills">
+            <li class="filter" data-filter="all">
+                <a href="">All</a>
+            </li>
+            <li class="filter" data-filter="web">
+                <a href="">Kenya</a>
+            </li>
+            <li class="filter" data-filter="photo">
+                <a href="">Africa</a>
+            </li>
+            <li class="filter" data-filter="identity">
+                <a href="">World</a>
+            </li>
+        </ul>
+        <!-- list of visited places -->
+        {% for post in site.posts%}
+        <div id="single-project">
+            <div id="slidingDiv" class="toggleDiv row-fluid single-project">
+                <div class="span6">
+                    <img src="{{post.blog-image}}" alt="{{post.title}}" />
+                </div>
+                <div class="span6">
+                    <div class="project-description">
+                        <div class="project-title clearfix">
+                            <h3>{{post.title}}</h3>
+                            <span class="show_hide close">
+                                <i class="icon-cancel"></i>
+                            </span>
+                        </div>
+                        <div class="project-info">
+                            <p>{{post.intro}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            <!-- End details for portfolio project 1 -->
+            {% for post in site.posts%}
+            <ul id="portfolio-grid" class="thumbnails row">
+                <li class="span4 mix web">
+                    <div class="thumbnail">
+                        <img src="{{post.blog-image}}" alt="project 1">
+                        <a href="#single-project" class="more show_hide" rel="#slidingDiv">
+                            <i class="icon-plus"></i>
+                        </a>
+                        <h3>{{post.title}}</h3>
+                        <p>{{post.intro}}</p>
+                        <div class="mask"></div>
+                    </div>
+                </li>
+            </ul>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- Portfolio section end -->
