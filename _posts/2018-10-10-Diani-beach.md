@@ -1,6 +1,6 @@
 ---
 title:  "DIANI BEACH"
-category: outdoor
+category: Kenya
 blog-image: assets/images/outdoor/diani.jpeg
 intro: One of the world’s most beautiful beaches!!!
 ---

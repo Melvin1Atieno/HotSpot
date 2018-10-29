@@ -30,21 +30,17 @@ p {
     min-height:70px;
 }
 
-.navbar-fixed-top {
+/* .navbar-fixed-top {
     min-height:60px;
     height:60px;
     padding-top:0;
-}
+} */
 .navbar-inner {
     background: #181A1C;
     border-radius:0;
     filter: none;
     border: none;
     box-shadow: none;
-}
-.navbar .brand img {
-    width:120px;
-    height:40px;
 }
 .navbar .nav > li > a {
     text-transform:uppercase;
@@ -91,25 +87,25 @@ p {
 /******
 2. Layout
 **********************************************************************/
-.centered {
+/* .centered {
     margin-left:auto;
     margin-right:auto;
     float: none;
     text-align: center;
-}
+} */
 /* Use this class if you want ceter element with span* class */
  .center {
     float: none !important;
     margin: 0 auto !important;
     text-align: center;
 }
-.highlighted-box {
+/* .highlighted-box {
     background:#F4F8F9;
     padding:20px 30px;
 }
 .highlighted-box h1 {
     margin:0px;
-}
+} */
 .large-text {
     line-height:1.2em;
     font-size: 30px;
@@ -349,12 +345,12 @@ p {
     color: #181A1C;
 }
 /* Third section use bacground image */
-.third-section {
+/* .third-section {
     padding-bottom: 70px;
     background: #181A1C url(/assets/images/site/brand-bg.png) no-repeat center;
     border-top:6px solid #FECE1A;
-}
-.third-section .container {
+} */
+/* .third-section .container {
     padding-top:20px;
     position:relative;
 }
@@ -367,7 +363,7 @@ p {
 }
 .sub-section .title {
     padding:0;
-}
+} */
 
 /*
 3.2 Portfolio
@@ -435,7 +431,7 @@ p {
     border: 1px solid #fff;
 }
 .team .thumbnail:hover .social {
-    z-index: 5;
+    z-index: 5003;
 }
 .team .thumbnail:hover .social a {
     color:#fff;
@@ -459,7 +455,7 @@ p {
 /*
 3.8 Footer
 ********************************************************************/
- .footer {
+ /* .footer {
     background: #181A1C;
     text-align: center;
 }
@@ -494,7 +490,7 @@ p {
     position:relative;
     top:7px;
     color:#fff;
-}
+} */
 /*
 4 Responsible
 ********************************************************************/

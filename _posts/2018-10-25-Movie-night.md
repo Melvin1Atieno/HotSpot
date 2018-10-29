@@ -1,6 +1,6 @@
 ---
 title:  "IMAX Garden City"
-category: indoor
+category: Kenya
 blog-image: assets/images/indoor/movienight.jpg
 intro:
 ---
